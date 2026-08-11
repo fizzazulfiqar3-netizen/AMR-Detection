@@ -75,15 +75,6 @@ For a detailed look, the beeswarm plot below shows the individual impact of the 
 
 ![SHAP Beeswarm Plot](reports/shap_summary.png)
 
-### Local Waterfall Explanations
-Waterfall charts explain how individual resistant and susceptible predictions are calculated relative to the dataset base value:
-
-#### Local Resistant Prediction Explanation
-![Local Resistant Explanation](reports/shap_local_resistant.png)
-
-#### Local Susceptible Prediction Explanation
-![Local Susceptible Explanation](reports/shap_local_susceptible.png)
-
 ---
 
 ## 🛡️ Git Best Practices & Large File Storage
