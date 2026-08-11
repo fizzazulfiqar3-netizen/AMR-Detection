@@ -77,24 +77,3 @@ For a detailed look, the beeswarm plot below shows the individual impact of the 
 
 ---
 
-## 🛡️ Git Best Practices & Large File Storage
-
-This repository is configured with a `.gitignore` to prevent tracking files that exceed GitHub's 100 MB file size limit:
-* Raw data (`data/raw/`) and preprocessed data (`data/processed/`) are ignored.
-* Model pickle binaries (`models/`) are ignored.
-
-If your local Git history has crashed due to large files, run these terminal commands to reset your local tracking cleanly:
-```bash
-# 1. Reset your commits back to your first remote commit on GitHub
-git reset --soft 98b7f84
-
-# 2. Untrack the data and models folders from your Git index
-git rm -r --cached data/ models/
-
-# 3. Add all clean changes (skipped directories are ignored automatically)
-git add .
-
-# 4. Commit and push
-git commit -m "Migrate AMR project to NCBI dataset with clean XGBoost and baseline models"
-git push origin main
-```
